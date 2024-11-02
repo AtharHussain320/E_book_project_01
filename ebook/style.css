@@ -1,0 +1,407 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
+
+header {
+    background-color: #f8a55b;
+    color: white;
+     height: 80px;
+    padding: .5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.nav-container .logo {
+    font-size: 2rem; 
+    font-weight: bold;  
+}
+
+.nav {
+    display: flex;
+    flex-grow: 1;
+}
+
+.nav--ul__one {
+    margin: 0 auto;
+}
+
+.nav-container, .nav--ul__one,
+.nav--ul__two {
+    display: flex;
+    gap: 1.6rem;
+    font-size: 1.2rem;
+}
+
+.hamburger-menu {
+    display: none; /* Hidden by default for larger screens */
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    .nav-container .logo {
+        font-size: 1.2rem;
+        z-index: 2;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .nav--ul__one,
+    .nav--ul__two {
+        flex-direction: column;
+        gap: .6rem;
+    }
+
+    .hamburger-menu {
+        display: block;
+
+        z-index: 2;
+    }
+
+    .nav {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        bottom: 0;
+        width: 100%;
+
+        padding-top: 6rem;
+
+        align-items: center;
+        text-align: center;
+        background-color: #4D4DDB;
+        color: white;
+
+        transition: 0.15s ease-in-out;
+    }
+
+    .nav.active {
+        right: 0;
+    }
+
+}
+
+
+
+.landon{
+    width: 600px;
+    height: 700px;
+    background-color: white;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.loss{
+    width: auto;
+    height: 900px;
+    background-image: url(/img/ck.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.posk{
+    background-color: #e6e1dd;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.op{
+    width: 300px;
+    height: 300px;
+    border: 6px solid black;
+    border-radius: 20px;
+}
+
+
+.vip{
+    width: 300px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.vip h1{
+    color: #f8a55b;
+}
+
+
+@media (min-width:768px) {
+    .posk{
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .op{
+        width: 320px;
+        height: 300px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sock{
+    width: 100%;
+    height: 1200px;
+    background-color: #807064;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.fis{
+    width: 300px;
+    height: 380px;
+    background-image: url(/img/ck.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+
+
+
+.sec{
+    width: 300px;
+    height: 380px;
+    background-image: url(/img/ck.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:20px;
+    border-radius: 30px;
+}
+
+
+.thd{
+    width: 300px;
+    height: 380px;
+    background-image: url(/img/ck.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+.contact{
+    width: 100%;
+    height: 600px;
+    background-color: #f8a55b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+  }
+  
+  
+  .login{
+    width: 260px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  
+  
+  .locate{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  .login .name{
+    padding: 8px 13px;
+    border-radius: 20px;
+  }
+  
+  
+  .login .email{
+    padding: 8px 13px;
+    border-radius: 20px;
+  }
+  
+  
+  
+  
+  .login .downloadebook{
+    background-color: #f8a55b;
+    border-radius: 30px;
+    padding: 10px 16px;
+    color: black;
+    border: 2px solid black;
+  }
+
+
+
+
+
+
+  @media(min-width:768px) {
+    .contact{
+     flex-direction: row;
+     gap: 30px;
+     margin: auto;
+     margin-top: 60px;
+     width: 1000px;
+    }
+ }
+
+
+
